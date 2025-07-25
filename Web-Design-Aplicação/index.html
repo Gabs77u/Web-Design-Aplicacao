@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heróis da Terra - Uma aventura com a Turma do Banana Cat">
+    <meta name="keywords" content="banana cat, heróis, gatos, turma do banana cat">
+    <meta name="author" content="Seu nome">
+    <title>Heróis da Terra - Turma do Banana Cat</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#0b1026">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#0b1026">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0b1026">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho principal -->
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-rocket"></i> Heróis da Terra</h1>
+            <h2><i class="fas fa-star"></i> The Bananas Cat</h2>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="#herois"><i class="fas fa-rocket"></i> Heróis</a></li>
+            <li><a href="products.html"><i class="fas fa-store"></i> Produtos</a></li>
+            <li><a href="#video"><i class="fas fa-film"></i> Vídeos</a></li>
+            <li><a href="contact.html" class="btn-login"><i class="fas fa-user-astronaut"></i> Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção dos Heróis -->
+        <div class="herois-container">
+            <h3><i class="fas fa-star"></i> Turma do Banana Cat</h3>
+            <h4><i class="fas fa-shield-alt"></i> Salvando a Galáxia</h4>
+
+            <div class="herois">
+                <div class="heroi">
+                    <div class="produto-badge">Popular</div>
+                    <img src="images/banana_cat.jpg" alt="Banana Cat - O herói original" loading="lazy">
+                    <h5>Banana Cat</h5>
+                    <p>Simples, seu amigo camarada, nenhum poder especial conhecido, mas sabe assar biscoitos de chocolate deliciosos.</p>
+                    <div class="preco">R$ 99,90</div>
+                    <button onclick="window.location.href='products.html#produtos'" class="dev-warning">
+                        <i class="fas fa-rocket"></i> Ver Detalhes
+                    </button>
+                </div>
+
+                <div class="heroi">
+                    <div class="produto-badge">Novo</div>
+                    <img src="images/banana_cat_chorao.jpg" alt="Banana Cat Chorão - O herói emotivo" loading="lazy">
+                    <h5>Banana Cat Chorão</h5>
+                    <p>Fraco em força física e resistência, porém possui alta resiliência e destreza alta, além de sua habilidade "CHORÃO".</p>
+                    <div class="preco">R$ 149,90</div>
+                    <button onclick="window.location.href='products.html#produtos'" class="dev-warning">
+                        <i class="fas fa-rocket"></i> Ver Detalhes
+                    </button>
+                </div>
+
+                <div class="heroi">
+                    <div class="produto-badge">Destaque</div>
+                    <img src="images/banana_cat_apaixonado.jpg" alt="Banana Cat Apaixonado - O herói romântico" loading="lazy">
+                    <h5>Banana Cat Apaixonado</h5>
+                    <p>Meu favorito. Forte e determinado, utiliza da força do amor para neutralizar seus inimigos quase que de imediato.</p>
+                    <div class="preco">R$ 199,90</div>
+                    <button onclick="window.location.href='products.html#produtos'" class="dev-warning">
+                        <i class="fas fa-rocket"></i> Ver Detalhes
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção do Vídeo -->
+        <div class="video-container">
+            <h3><i class="fas fa-space-shuttle"></i> Bananas Cats no Espaço</h3>
+            <h4><i class="fas fa-star"></i> Esse vídeo é real, confia</h4>
+            <div class="video-wrapper">
+                <video controls preload="metadata" aria-label="Vídeo dos Bananas Cats no Espaço">
+                    <source src="images/banana_cati_midia.mp4" type="video/mp4">
+                    <p>Seu navegador não suporta a reprodução de vídeos.</p>
+                </video>
+            </div>
+            <p><i class="fas fa-satellite"></i> Essas são provas irrefutáveis de uma visita alien ao nosso planeta azul</p>
+            <h5><i class="fas fa-star"></i> ESSE VIDEO É REAL, CONFIA !!!!!</h5>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <p><i class="fas fa-moon" aria-hidden="true"></i> 2024 Heróis da Terra. Todos os direitos reservados.</p>
+        <div class="social-icons" aria-label="Redes sociais">
+            <a href="https://discord.gg/emdev" target="_blank" rel="noopener noreferrer" aria-label="Discord - Comunidade espacial" class="dev-warning">
+                <i class="fab fa-discord" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Gabs77u" target="_blank" rel="noopener noreferrer" aria-label="GitHub - Código fonte" class="dev-warning">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitch.tv/emdev" target="_blank" rel="noopener noreferrer" aria-label="Twitch - Lives espaciais" class="dev-warning">
+                <i class="fab fa-twitch" aria-hidden="true"></i>
+            </a>
+            <a href="https://steamcommunity.com/id/emdev" target="_blank" rel="noopener noreferrer" aria-label="Steam - Jogos espaciais" class="dev-warning">
+                <i class="fab fa-steam" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
